@@ -2,20 +2,23 @@ public class FindMaximum
 {
     public static void main(String[] args) {
         System.out.println("Welcome to Find Maximum Float Problem using Generics");
-        Float a= 29.89f, b = 9.99f, c = 9.96f;  //takiing variables float no.
+        String e = "Apple", f = "Orange" , g = "Mango";    //take variables strings
 
-        testMaximum(a, b, c);  //calling method
+        //calling directly without creating object bcoz testMaximum method also static.
+        testMaximum (e,f,g);//calling method
     }
-    //creating testMaximum method and passing parameters.
-    private static void testMaximum(Float a, Float b, Float c) {
-        Float max = a; //checking condition and find max float no
-        if (b.compareTo(a) > 0) {
-            max = b;
+    //creating testMaximum method and passing parameter in string type
+    private static void testMaximum(String e, String f, String g) {
+        String max = e; //checking condition comparing and finding max string
+        if(f.compareTo(e)>0){
+            max = f;
         }
-        if (c.compareTo(max) > 0) {
-            max = c;
+        if(g.compareTo(max)>0){
+            max = g;
         }
-        System.out.println("Maximum Number is: " + max); //print maximum float no.
+        System.out.println("Maximum String is: "+max);//print maximum string
 
     }
+
+
 }
