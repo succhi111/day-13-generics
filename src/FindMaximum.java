@@ -1,5 +1,5 @@
 public class FindMaximum <T extends Comparable<T>> {
-    // create genterics maxmumValue method and passing parameters
+    // create generics maximum Value method and passing parameters
 
     T val1, val2, val3, val4, val5;
     // create constructor and passing parameter
@@ -14,7 +14,7 @@ public class FindMaximum <T extends Comparable<T>> {
     public T maximumValue() {
         return maximumValue(val1, val2, val3, val4, val5);  //return value
     }
-    // creating generic method and passing paramerter
+    // creating generic method and passing parameter
     public static <T extends Comparable<T>> T maximumValue(T val1, T val2, T val3, T val4, T val5) {
 
         T max = val1;
